@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Circular Economy, Landfills & Shareholder Value | MSc Dissertation</title>
+<meta name="description" content="Warwick Business School MSc Management dissertation: do circular economy strategies and landfill ownership create shareholder value in waste management firms?">
+<style>
+:root{--bg:#f5f7fa;--card:#fff;--ink:#1b2430;--mute:#4a5568;--line:#dde3ec;--acc:#0b3d91;--accbg:#e8eef8;--teal:#0e8a8a;--coral:#b23a48;--gold:#c8962e;--wm:#2f80ed;--rsg:#2e9e5b;--wcn:#f2994a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font:16.5px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+
+header a{color:#fff}
+
+
+h1{font-size:clamp(28px,5vw,46px);line-height:1.15;margin:18px 0 12px}
+.lead{font-size:18px;max-width:720px;opacity:.95}
+
+
+.btn{display:inline-block;margin:14px 10px 0 0;padding:11px 20px;border-radius:10px;background:#fff;color:#0a1f44;text-decoration:none;font-weight:700;font-size:15px}
+.btn.o{background:none;border:2px solid #fff;color:#fff}
+nav{position:sticky;top:0;background:#fff;box-shadow:0 2px 12px rgba(30,40,90,.12);z-index:5}
+nav .wrap{display:flex;gap:8px;align-items:center;overflow-x:auto;padding:10px 20px;white-space:nowrap}
+nav b{font-size:13px;color:var(--mute);margin-right:4px}
+nav a{padding:7px 14px;border-radius:99px;font-size:14px;font-weight:600;text-decoration:none;color:var(--ink);background:var(--accbg)}
+nav a:nth-of-type(4n+2){background:#dcf1f0}nav a:nth-of-type(4n+3){background:#f6e1e4}nav a:nth-of-type(4n){background:#f7ecd3}
+nav a:hover{outline:2px solid var(--acc)}
+section{padding:44px 0}
+section:nth-of-type(even){background:#fff}
+h2{font-size:30px;margin:0 0 6px;padding-left:14px;border-left:6px solid var(--acc)}
+.sub{color:var(--mute);margin:0 0 24px;padding-left:20px}
+h3{font-size:18px;margin:0 0 8px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--acc);border-radius:14px;padding:18px;box-shadow:0 3px 12px rgba(40,50,110,.07)}
+.grid .card:nth-child(4n+2){border-top-color:var(--teal)}.grid .card:nth-child(4n+3){border-top-color:var(--coral)}.grid .card:nth-child(4n){border-top-color:var(--gold)}
+.stat{color:#fff;border:0}
+.stat b{display:block;font-size:36px;line-height:1.1}
+.stat span{font-size:14px;opacity:.95}
+.grid .stat:nth-child(1){background:linear-gradient(135deg,#0a1f44,#1c4a8a)}
+.grid .stat:nth-child(2){background:linear-gradient(135deg,#0b6e6e,#14a3a3)}
+.grid .stat:nth-child(3){background:linear-gradient(135deg,#8c2f3b,#b23a48)}
+.grid .stat:nth-child(4){background:linear-gradient(135deg,#a8791f,#c8962e)}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:0 3px 12px rgba(40,50,110,.07)}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:linear-gradient(90deg,#0a1f44,#12306b);color:#fff;font-size:13px;text-transform:uppercase;letter-spacing:.04em}
+tr:nth-child(even) td{background:#f6f8fb}
+tr:last-child td{border-bottom:0}
+.chart{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:0 3px 12px rgba(40,50,110,.07)}
+.chart h3{margin-bottom:2px;color:var(--acc)}.chart p{margin:0 0 10px;font-size:14px;color:var(--mute)}
+.cv{position:relative;height:270px}
+.two{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+@media(max-width:420px){.two{grid-template-columns:1fr}}
+.flow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:8px}
+.flow div{background:linear-gradient(135deg,#0a1f44,#0e8a8a);color:#fff;padding:10px 16px;border-radius:10px;font-weight:600;font-size:14.5px}
+.flow i{color:var(--mute);font-style:normal;font-size:20px}
+.dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:6px}
+.note{background:#faf3df;border-left:6px solid var(--gold);padding:14px 18px;border-radius:10px;font-size:15.5px}
+cite{font-style:normal;color:var(--mute);font-size:.9em}
+ol.refs{font-size:14.5px;color:var(--mute);padding-left:20px}ol.refs li{margin-bottom:6px}
+a{color:var(--acc)}
+footer{padding:30px 0 50px;color:#fff;background:#0a1f44;font-size:14px}
+header{background:#0a2540;color:#fff;padding:52px 0 44px;border-bottom:5px solid #0e8a8a}
+.eyebrow{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#9ec5ee;font-weight:600;margin:0}
+.hl{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));margin:26px 0 8px;border-top:1px solid #2d4a6b;border-bottom:1px solid #2d4a6b}
+.hl div{padding:14px 16px 14px 0}.hl b{display:block;font-size:24px}.hl span{font-size:13px;color:#b8c8dc}
+.by{margin:18px 0 0;font-size:15px;color:#d7e2f0}
+</style>
+</head>
+<body>
+
+
+<header><div class="wrap">
+<p class="eyebrow">MSc Management Dissertation | Warwick Business School | Awarded Distinction</p>
+<h1>Do circular economy strategies and landfill ownership create shareholder value?</h1>
+<p class="lead">A comparative study of Waste Management, Republic Services and Waste Connections, 2017–2024, built entirely on public filings and market data.</p>
+<div class="hl"><div><b>Distinction</b><span>Awarded grade</span></div><div><b>3</b><span>industry leaders compared</span></div><div><b>8 years</b><span>of data, 2017–2024</span></div><div><b>50+</b><span>data tables</span></div></div>
+<p class="by"><b>Ananya Bangera</b> &nbsp;|&nbsp; <a href="mailto:ananyabangera9@gmail.com">ananyabangera9@gmail.com</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/ananya-bangera9">LinkedIn</a></p>
+<a class="btn" href="dissertation.pdf">Read the full dissertation (PDF)</a><a class="btn o" href="#findings">Jump to the findings</a>
+</div></header>
+<nav><div class="wrap"><b>Jump to:</b><a href="#overview">Overview</a><a href="#design">Research design</a><a href="#findings">Findings</a><a href="#takeaways">Takeaways</a><a href="#tech">Technical skills</a><a href="#soft">Soft skills</a><a href="#reflect">Reflections</a><a href="#refs">References</a></div></nav>
+
+<section id="overview"><div class="wrap">
+<h2>The project in 60 seconds</h2>
+<p class="sub">Written for non-specialists: what I asked, why it matters, and what I found.</p>
+<div class="grid">
+<div class="card stat"><b>3</b><span>North American waste leaders compared</span></div>
+<div class="card stat"><b>8 yrs</b><span>of financial data (2017–2024)</span></div>
+<div class="card stat"><b>50+</b><span>appendix tables across 10-Ks, Bloomberg and LSEG</span></div>
+<div class="card stat"><b>500%</b><span>best 10-year total return (Republic Services)</span></div>
+</div>
+<div class="grid" style="margin-top:16px">
+<div class="card"><h3>The question</h3>Businesses are moving from “take-make-dispose” to a circular economy (CE), where materials are reused and recycled. Does that shift, and owning scarce landfills, actually pay off for shareholders?</div>
+<div class="card"><h3>The gap</h3>Most CE research is conceptual. ESG studies use blended scores that can’t isolate one strategy, and the financial role of physical assets like landfills is under-studied <cite>(Pomponi &amp; Moncaster, 2016)</cite>.</div>
+<div class="card"><h3>The answer: a “qualified yes”</h3>Landfills form a durable competitive moat. Circular economy helps mainly as a complement to the core business model, not as a standalone driver of valuation.</div>
+</div>
+</div></section>
+
+<section id="design"><div class="wrap">
+<h2>Research design</h2>
+<p class="sub">A comparative case study using secondary data, with patterns observed rather than causation claimed <cite>(Yin, 2018)</cite>.</p>
+<div class="tw"><table>
+<tr><th>Element</th><th>What I used</th></tr>
+<tr><td>Independent variables</td><td>CE strategy (recycling revenue as a share of revenue) · Landfill ownership (number of landfills; DD&amp;A as a share of revenue as a capital-intensity proxy)</td></tr>
+<tr><td>Dependent variables</td><td>Return on equity (ROE) · EV/EBITDA valuation multiple · Total shareholder return (TSR)</td></tr>
+<tr><td>Data sources</td><td>10-K filings and investor presentations, cross-checked with Bloomberg; LSEG Eikon ESG scores</td></tr>
+<tr><td>Method</td><td>Common-size analysis (every line as % of revenue or assets), ratio and trend analysis</td></tr>
+</table></div>
+<h3 style="margin-top:24px">Conceptual framework</h3>
+<div class="flow"><div>CE strategy + landfill ownership</div><i>→</i><div>Capital structure &amp; efficiency</div><i>→</i><div>ROE · EV/EBITDA · risk · TSR</div></div>
+<h3 style="margin-top:24px">Theories applied</h3>
+<div class="tw"><table>
+<tr><th>Theory</th><th>Plain-English idea</th><th>How it was used</th></tr>
+<tr><td>Resource-Based View <cite>(Barney &amp; Clark, 2007)</cite></td><td>Lasting advantage comes from resources that are Valuable, Rare, hard to Imitate and Non-substitutable (VRIN)</td><td>Landfills qualify: site scarcity and permitting create barriers</td></tr>
+<tr><td>Transaction Cost Economics <cite>(Williamson, 1985)</cite></td><td>Owning more of the chain cuts cost and risk</td><td>Vertical integration from collection to disposal</td></tr>
+<tr><td>Signaling Theory <cite>(Spence, 1973)</cite></td><td>Firm choices tell investors about future prospects</td><td>Explains the valuation premium for growth strategy</td></tr>
+<tr><td>Materiality <cite>(Khan, Serafeim &amp; Yoon, 2016)</cite></td><td>Investors react to issues that affect financials</td><td>Why landfills and recycling revenue matter</td></tr>
+<tr><td>Dynamic Capabilities <cite>(Teece et al., 1997)</cite></td><td>Advantage from adapting and acquiring well</td><td>Waste Connections’ acquisition-led model</td></tr>
+</table></div>
+</div></section>
+
+<section id="findings"><div class="wrap">
+<h2>Findings</h2>
+<p class="sub">All figures come from the dissertation’s appendix tables (company filings, Bloomberg).</p>
+<div class="tw"><table>
+<tr><th>2024</th><th>Landfills</th><th>EBIT margin</th><th>ROE</th><th>DD&amp;A / revenue</th><th>10-yr TSR</th></tr>
+<tr><td><span class="dot" style="background:var(--wm)"></span>Waste Management (WM)</td><td>262</td><td>18.42%</td><td>33.26%</td><td>10.28%</td><td>380%</td></tr>
+<tr><td><span class="dot" style="background:var(--rsg)"></span>Republic Services (RSG)</td><td>208</td><td>19.94%</td><td>17.92%</td><td>10.46%</td><td>500%</td></tr>
+<tr><td><span class="dot" style="background:var(--wcn)"></span>Waste Connections (WCN)</td><td>106</td><td>11.97%</td><td>7.86%</td><td>13.05%</td><td>351%</td></tr>
+</table></div>
+
+<div class="two" style="margin-top:20px">
+<div class="chart"><h3>10-year total shareholder return to 2024</h3><p>Asset-heavy Republic and WM beat the growth-led model and the S&amp;P 500 (Bloomberg, 2014–2024).</p><div class="cv"><canvas id="c1"></canvas></div></div>
+<div class="chart"><h3>Return on equity</h3><p>WM leads, partly helped by higher leverage. WCN reinvests for growth.</p><div class="cv"><canvas id="c2"></canvas></div></div>
+<div class="chart"><h3>EBIT margin</h3><p>The two largest firms are consistently in the 16–20% range.</p><div class="cv"><canvas id="c3"></canvas></div></div>
+<div class="chart"><h3>EV/EBITDA valuation multiple</h3><p>The market pays most for WCN’s growth. WM is omitted here; see the data note below.</p><div class="cv"><canvas id="c4"></canvas></div></div>
+<div class="chart"><h3>Recycling as a share of revenue</h3><p>Consistent recycling-only basis for all three firms.</p><div class="cv"><canvas id="c5"></canvas></div></div>
+<div class="chart"><h3>Total debt to total assets</h3><p>WM’s leverage rose from 43% to 54%. WCN rose from 33% to 41%.</p><div class="cv"><canvas id="c6"></canvas></div></div>
+</div>
+
+<h3 style="margin-top:28px">Evidence of vertical integration</h3>
+<div class="note">About <b>42%</b> of Republic Services’ 2024 landfill revenue was intercompany ($1,240M of $2,981M): its own collection trucks feed its own landfills, the captive-disposal advantage described by Transaction Cost Economics.</div>
+
+<h3 style="margin-top:24px">ESG scores alone can mislead</h3>
+<div class="tw"><table>
+<tr><th>2024 LSEG ESG</th><th>Score</th><th>EV/EBITDA</th></tr>
+<tr><td>Waste Management</td><td>A</td><td>see data note</td></tr>
+<tr><td>Republic Services</td><td>A−</td><td>15.0x</td></tr>
+<tr><td>Waste Connections</td><td>B (combined C+)</td><td>23.2x, the highest</td></tr>
+</table></div>
+<p style="font-size:14px;color:var(--mute)">The weakest ESG scorer carried the richest valuation, supporting the view that aggregated scores can distort valuation <cite>(Friede, Busch &amp; Bassen, 2015; Khan et al., 2016)</cite>.</p>
+</div></section>
+
+<section id="takeaways"><div class="wrap">
+<h2>Key takeaways</h2>
+<p class="sub">Two successful models, and CE as a complement.</p>
+<div class="grid">
+<div class="card"><h3>1. Asset-heavy model (WM, RSG)</h3>Value comes from what the firm owns: scarce landfills, vertical integration, stable margins and strong long-run returns.</div>
+<div class="card"><h3>2. Agility-led model (WCN)</h3>Value comes from what the market believes the firm can do: acquisition-led growth earns a premium multiple despite the lowest ROE.</div>
+<div class="card"><h3>3. CE is a complement</h3>Recycling revenue did not by itself predict a premium valuation. It adds value by strengthening the existing business model.</div>
+</div>
+<p style="margin-top:16px"><b>Practical implication:</b> investors who rely only on environmental scores risk flawed valuations. They should look at assets, strategy and financial materiality together.</p>
+</div></section>
+
+<section id="tech"><div class="wrap">
+<h2>Technical skills demonstrated</h2>
+<div class="tw"><table>
+<tr><th>Skill</th><th>Where it shows up</th></tr>
+<tr><td>Common-size financial statement analysis</td><td>Income statements, balance sheets and revenue segments for three firms over eight years</td></tr>
+<tr><td>Ratio, capital-structure and valuation analysis</td><td>ROE, EBIT margin, DD&amp;A intensity, debt-to-assets, EV/EBITDA, P/E</td></tr>
+<tr><td>Return benchmarking</td><td>TSR versus the S&amp;P 500 and the Dow Jones Waste &amp; Disposal Services index</td></tr>
+<tr><td>Financial data sourcing</td><td>10-Ks, investor presentations, Bloomberg Terminal, LSEG Eikon ESG data</td></tr>
+<tr><td>Research design and theory application</td><td>Case-study design, five-theory framework, Harvard referencing</td></tr>
+<tr><td>Data presentation</td><td>Data appendix of 50+ tables plus charts that make the story readable</td></tr>
+</table></div>
+</div></section>
+
+<section id="soft"><div class="wrap">
+<h2>Soft skills, with evidence</h2>
+<div class="grid">
+<div class="card"><h3>Independent project management</h3>Delivered one project across three firms, eight years and several data sources.</div>
+<div class="card"><h3>Analytical judgment</h3>Explained anomalies, such as WCN’s low ROE paired with a premium multiple, rather than ignoring them.</div>
+<div class="card"><h3>Intellectual honesty</h3>The hypothesis was only partly confirmed. I said so and set out the limitations.</div>
+<div class="card"><h3>Synthesis</h3>Tied theory, metrics and sources into one coherent argument.</div>
+<div class="card"><h3>Communication</h3>Made technical finance content readable for a general audience.</div>
+<div class="card"><h3>Attention to detail</h3>Cross-checked company filings against Bloomberg, and later re-audited my own appendix.</div>
+</div>
+</div></section>
+
+<section id="reflect"><div class="wrap">
+<h2>Limitations and what I’d do differently</h2>
+<p class="sub">Part of good research is knowing where it is weakest.</p>
+<div class="tw"><table>
+<tr><th>Issue</th><th>What I’d change</th></tr>
+<tr><td>Only three firms, self-reported public data, no causal claims</td><td>Widen to more firms and regions, then run panel regressions</td></tr>
+<tr><td>CE disclosure is inconsistent across firms</td><td>Standardise the CE measure on one basis. This page uses recycling revenue for all three; the dissertation text cites 11.89% for Republic, which reflects its wider Environmental Solutions segment (2.55% on a recycling basis)</td></tr>
+<tr><td>Data validation</td><td>Re-verify the WM EV/EBITDA series in the appendix, which duplicates its EV/Sales row, before drawing valuation comparisons</td></tr>
+<tr><td>CE revenue only, with no costs</td><td>Separate CE revenue from CE costs to estimate true returns</td></tr>
+</table></div>
+</div></section>
+
+<section id="refs"><div class="wrap">
+<h2>Selected references</h2>
+<ol class="refs">
+<li>Barney, J.B. and Clark, D.N. (2007). <i>Resource-based theory: creating and sustaining competitive advantage.</i> Oxford University Press.</li>
+<li>Friede, G., Busch, T. and Bassen, A. (2015). ESG and financial performance: aggregated evidence from more than 2000 empirical studies. <i>Journal of Sustainable Finance &amp; Investment</i>, 5(4), pp.210–233. <a href="https://doi.org/10.1080/20430795.2015.1118917">doi</a></li>
+<li>Geissdoerfer, M. et al. (2017). The circular economy – a new sustainability paradigm? <i>Journal of Cleaner Production</i>, 143, pp.757–768. <a href="https://doi.org/10.1016/j.jclepro.2016.12.048">doi</a></li>
+<li>Ghisellini, P., Cialani, C. and Ulgiati, S. (2016). A review on circular economy. <i>Journal of Cleaner Production</i>, 114, pp.11–32. <a href="https://doi.org/10.1016/j.jclepro.2015.09.007">doi</a></li>
+<li>Khan, M., Serafeim, G. and Yoon, A. (2016). Corporate sustainability: first evidence on materiality. <i>The Accounting Review</i>, 91(6), pp.1697–1724.</li>
+<li>Pomponi, F. and Moncaster, A. (2016). Circular economy for the built environment: a research framework. <a href="https://doi.org/10.17863/CAM.7204">doi</a></li>
+<li>Spence, M. (1973). Job market signaling. <i>The Quarterly Journal of Economics</i>, 87(3), pp.355–374. <a href="https://doi.org/10.2307/1882010">doi</a></li>
+<li>Teece, D.J., Pisano, G. and Shuen, A. (1997). Dynamic capabilities and strategic management. <i>Strategic Management Journal</i>, 18(7), pp.509–533.</li>
+<li>Williamson, O.E. (1985). <i>The economic institutions of capitalism.</i> New York: Free Press.</li>
+<li>Yin, R.K. (2018). <i>Case study research and applications: design and methods.</i> 6th ed. SAGE.</li>
+<li>Data: Bloomberg Terminal and LSEG Eikon (accessed 2024); WM, Republic Services and Waste Connections annual reports (10-K).</li>
+</ol>
+</div></section>
+
+<footer><div class="wrap">© Ananya Bangera. MSc Management dissertation, Warwick Business School. This page summarises academic work and is not investment advice.</div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+(function(){
+if(typeof Chart==='undefined'){return;}
+var s=getComputedStyle(document.documentElement);
+Chart.defaults.color=s.getPropertyValue('--mute').trim();
+Chart.defaults.borderColor=s.getPropertyValue('--line').trim();
+Chart.defaults.font.family='system-ui,sans-serif';
+var Y=[2017,2018,2019,2020,2021,2022,2023,2024],C={wm:'#2f80ed',rsg:'#2e9e5b',wcn:'#f2994a'};
+function ds(l,d,c){return{label:l,data:d,borderColor:c,backgroundColor:c,tension:.25,pointRadius:3}}
+function line(id,sets,fmt){new Chart(document.getElementById(id),{type:'line',data:{labels:Y,datasets:sets},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom'},tooltip:{callbacks:{label:function(c){return c.dataset.label+': '+c.parsed.y+fmt}}}},scales:{y:{beginAtZero:true,ticks:{callback:function(v){return v+fmt}}}}}})}
+new Chart(document.getElementById('c1'),{type:'bar',data:{labels:['Republic (RSG)','Waste Mgmt (WM)','Waste Conn. (WCN)','S&P 500'],datasets:[{data:[500.02,380.52,350.61,242.07],backgroundColor:[C.rsg,C.wm,C.wcn,'#8892a6']}]},options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:function(c){return c.parsed.x+'%'}}}},scales:{x:{ticks:{callback:function(v){return v+'%'}}}}}});
+line('c2',[ds('WM',[32.38,30.65,23.64,20.08,25.51,32.71,32.97,33.26],C.wm),ds('RSG',[16.07,13.09,13.22,11.42,14.39,15.36,16.42,17.92],C.rsg),ds('WCN',[9.19,8.47,8.17,2.98,8.84,11.75,9.91,7.86],C.wcn)],'%');
+line('c3',[ds('WM',[18.20,18.70,17.51,15.99,16.54,17.08,17.50,18.42],C.wm),ds('RSG',[16.62,17.29,17.35,16.83,18.38,17.70,18.58,19.94],C.rsg),ds('WCN',[13.54,16.91,15.55,7.57,16.90,17.22,15.41,11.97],C.wcn)],'%');
+line('c4',[ds('RSG',[10.96,11.06,12.7,13.68,15.94,13.56,14.6,15.04],C.rsg),ds('WCN',[17.84,15.3,17.53,26.1,21.59,18.82,20.05,23.15],C.wcn)],'x');
+line('c5',[ds('WM',[9.89,8.67,6.73,7.41,9.37,7.70,6.19,7.27],C.wm),ds('RSG',[5.37,2.97,2.65,2.93,3.72,2.66,2.09,2.55],C.rsg),ds('WCN',[3.49,1.88,1.19,1.59,3.33,2.84,1.83,2.71],C.wcn)],'%');
+line('c6',[ds('WM',[43.48,44.26,48.65,47.06,46.07,47.77,49.44,53.63],C.wm),ds('RSG',[38.72,38.57,38.30,38.12,38.29,40.57,40.81,39.24],C.rsg),ds('WCN',[32.55,32.91,31.70,33.71,34.33,40.25,37.68,40.78],C.wcn)],'%');
+})();
+</script>
+</body>
+</html>
