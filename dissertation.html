@@ -5,68 +5,104 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Circular Economy, Landfills & Shareholder Value | MSc Dissertation</title>
 <meta name="description" content="Warwick Business School MSc Management dissertation: do circular economy strategies and landfill ownership create shareholder value in waste management firms?">
-<style>
-:root{--bg:#f5f7fa;--card:#fff;--ink:#1b2430;--mute:#4a5568;--line:#dde3ec;--acc:#0b3d91;--accbg:#e8eef8;--teal:#0e8a8a;--coral:#b23a48;--gold:#c8962e;--wm:#2f80ed;--rsg:#2e9e5b;--wcn:#f2994a}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:70px}
-body{margin:0;font:16.5px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink)}
-.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
-
+<style>*{box-sizing:border-box}
+:root{--alt:#f5f6f8;--ink:#14202e;--mute:#5b6676;--line:#dfe3e9;--navy:#0f2742;--acc:#1f5f7a}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:#fff}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;font-weight:700;letter-spacing:-.01em}
+header{background:var(--navy);color:#fff;padding:56px 0 34px}
 header a{color:#fff}
-
-
-h1{font-size:clamp(28px,5vw,46px);line-height:1.15;margin:18px 0 12px}
-.lead{font-size:18px;max-width:720px;opacity:.95}
-
-
-.btn{display:inline-block;margin:14px 10px 0 0;padding:11px 20px;border-radius:10px;background:#fff;color:#0a1f44;text-decoration:none;font-weight:700;font-size:15px}
-.btn.o{background:none;border:2px solid #fff;color:#fff}
-nav{position:sticky;top:0;background:#fff;box-shadow:0 2px 12px rgba(30,40,90,.12);z-index:5}
-nav .wrap{display:flex;gap:8px;align-items:center;overflow-x:auto;padding:10px 20px;white-space:nowrap}
-nav b{font-size:13px;color:var(--mute);margin-right:4px}
-nav a{padding:7px 14px;border-radius:99px;font-size:14px;font-weight:600;text-decoration:none;color:var(--ink);background:var(--accbg)}
-nav a:nth-of-type(4n+2){background:#dcf1f0}nav a:nth-of-type(4n+3){background:#f6e1e4}nav a:nth-of-type(4n){background:#f7ecd3}
-nav a:hover{outline:2px solid var(--acc)}
-section{padding:44px 0}
-section:nth-of-type(even){background:#fff}
-h2{font-size:30px;margin:0 0 6px;padding-left:14px;border-left:6px solid var(--acc)}
-.sub{color:var(--mute);margin:0 0 24px;padding-left:20px}
-h3{font-size:18px;margin:0 0 8px}
-.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-.card{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--acc);border-radius:14px;padding:18px;box-shadow:0 3px 12px rgba(40,50,110,.07)}
-.grid .card:nth-child(4n+2){border-top-color:var(--teal)}.grid .card:nth-child(4n+3){border-top-color:var(--coral)}.grid .card:nth-child(4n){border-top-color:var(--gold)}
-.stat{color:#fff;border:0}
-.stat b{display:block;font-size:36px;line-height:1.1}
-.stat span{font-size:14px;opacity:.95}
-.grid .stat:nth-child(1){background:linear-gradient(135deg,#0a1f44,#1c4a8a)}
-.grid .stat:nth-child(2){background:linear-gradient(135deg,#0b6e6e,#14a3a3)}
-.grid .stat:nth-child(3){background:linear-gradient(135deg,#8c2f3b,#b23a48)}
-.grid .stat:nth-child(4){background:linear-gradient(135deg,#a8791f,#c8962e)}
-.tw{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:0 3px 12px rgba(40,50,110,.07)}
+.back a{font-size:13.5px;color:#9db4cc;text-decoration:none}
+.eyebrow{font:600 12.5px/1.4 system-ui;letter-spacing:.16em;text-transform:uppercase;color:#9db4cc;margin:14px 0 0}
+h1{font-size:clamp(34px,6vw,56px);line-height:1.08;margin:14px 0 10px;color:#fff}
+.role{font-size:18px;color:#c8d5e3;margin:0}
+.lead{max-width:700px;color:#c8d5e3;margin:10px 0 0}
+.hl{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin:32px 0 0;border-top:1px solid rgba(255,255,255,.2)}
+.hl div{padding:18px 16px 4px 0}
+.hl b{display:block;font:700 30px/1.1 Georgia,serif;color:#fff}
+.hl span{font-size:13px;color:#9db4cc}
+.by{margin:16px 0 0;font-size:14.5px;color:#c8d5e3}
+.btn{display:inline-block;margin:22px 12px 0 0;padding:11px 22px;border-radius:4px;background:#fff;color:var(--navy);text-decoration:none;font-weight:600;font-size:14.5px}
+.btn.o{background:none;border:1px solid #fff;color:#fff}
+.btn.d{background:var(--navy);color:#fff}.btn.od{background:none;border:1px solid var(--navy);color:var(--navy)}
+nav{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:24px;align-items:center;overflow-x:auto;white-space:nowrap}
+nav a{padding:14px 0;font-size:14px;font-weight:600;color:var(--mute);text-decoration:none;border-bottom:2px solid transparent}
+nav a:hover{color:var(--navy);border-color:var(--navy)}
+nav b{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+section{padding:54px 0}
+section:nth-of-type(even){background:var(--alt)}
+h2{font-size:30px;margin:0;color:var(--navy)}
+h2:after{content:"";display:block;width:44px;height:3px;background:var(--acc);margin-top:10px}
+.sub{color:var(--mute);margin:12px 0 26px}
+h2+*:not(.sub){margin-top:24px}
+h3{font-size:18px;margin:0 0 6px;color:var(--navy)}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:20px}
+.k{display:block;font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);margin-bottom:6px}
+.co{font-size:14px;color:var(--mute);margin:0 0 8px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border-top:2px solid var(--navy)}
+.st{padding:18px 18px 18px 0}
+.st b,.card.stat b{display:block;font:700 38px/1.05 Georgia,serif;color:var(--navy)}
+.st span,.card.stat span{display:block;font-size:13.5px;color:var(--mute);margin-top:6px}
+.hi{font-weight:600;color:var(--navy);box-shadow:inset 0 -7px 0 #dbe6f0}
+.tag,.pill{display:inline-block;padding:3px 10px;border:1px solid #c6cfdb;border-radius:3px;font-size:12.5px;color:var(--navy);margin:3px 5px 3px 0;background:#fff;font-weight:500}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:#fff}
 table{border-collapse:collapse;width:100%;font-size:15px}
 th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
-th{background:linear-gradient(90deg,#0a1f44,#12306b);color:#fff;font-size:13px;text-transform:uppercase;letter-spacing:.04em}
-tr:nth-child(even) td{background:#f6f8fb}
-tr:last-child td{border-bottom:0}
-.chart{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:0 3px 12px rgba(40,50,110,.07)}
-.chart h3{margin-bottom:2px;color:var(--acc)}.chart p{margin:0 0 10px;font-size:14px;color:var(--mute)}
-.cv{position:relative;height:270px}
-.two{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+th{background:var(--navy);color:#fff;font-size:12.5px;text-transform:uppercase;letter-spacing:.06em}
+tr:nth-child(even) td{background:#f8f9fb}tr:last-child td{border-bottom:0}
+.chart{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px}
+.chart h3{margin-bottom:2px}.chart p{margin:0 0 10px;font-size:14px;color:var(--mute)}
+.cv{position:relative;height:280px}
+.two{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
 @media(max-width:420px){.two{grid-template-columns:1fr}}
-.flow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:8px}
-.flow div{background:linear-gradient(135deg,#0a1f44,#0e8a8a);color:#fff;padding:10px 16px;border-radius:10px;font-weight:600;font-size:14.5px}
-.flow i{color:var(--mute);font-style:normal;font-size:20px}
-.dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:6px}
-.note{background:#faf3df;border-left:6px solid var(--gold);padding:14px 18px;border-radius:10px;font-size:15.5px}
+.flow{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.flow div{background:var(--navy);color:#fff;padding:10px 16px;border-radius:4px;font-weight:600;font-size:14.5px}
+.flow i{color:var(--mute);font-style:normal}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
+.note{border-left:3px solid var(--acc);background:#fff;padding:14px 18px;font-size:15.5px}
 cite{font-style:normal;color:var(--mute);font-size:.9em}
-ol.refs{font-size:14.5px;color:var(--mute);padding-left:20px}ol.refs li{margin-bottom:6px}
+ol.refs{font-size:14px;color:var(--mute);padding-left:20px}ol.refs li{margin-bottom:6px}
 a{color:var(--acc)}
-footer{padding:30px 0 50px;color:#fff;background:#0a1f44;font-size:14px}
-header{background:#0a2540;color:#fff;padding:52px 0 44px;border-bottom:5px solid #0e8a8a}
-.eyebrow{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#9ec5ee;font-weight:600;margin:0}
-.hl{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));margin:26px 0 8px;border-top:1px solid #2d4a6b;border-bottom:1px solid #2d4a6b}
-.hl div{padding:14px 16px 14px 0}.hl b{display:block;font-size:24px}.hl span{font-size:13px;color:#b8c8dc}
-.by{margin:18px 0 0;font-size:15px;color:#d7e2f0}
+footer{background:var(--navy);color:#9db4cc;padding:28px 0 40px;font-size:14px}footer a{color:#fff}
+.tl{border-left:1px solid #c6cfdb;margin-left:5px}
+.m{position:relative;display:grid;grid-template-columns:150px 1fr;gap:18px;padding:0 0 30px 26px}
+.m:before{content:"";position:absolute;left:-5px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--navy)}
+.m .d{font-size:13px;font-weight:600;color:var(--mute);padding-top:3px}
+.m h3{margin:0}.m .org{font-size:14.5px;color:var(--mute);margin-bottom:6px}
+.more{display:inline-block;margin-top:6px;font-size:13.5px;font-weight:600;color:var(--acc);text-decoration:none;border-bottom:1px solid var(--acc)}
+@media(max-width:640px){.m{grid-template-columns:1fr;gap:2px}}
+.key{background:var(--navy);color:#fff;border-radius:6px;padding:26px;margin-bottom:34px}
+.key .lab{font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#9db4cc}
+.key h3{color:#fff;font-size:26px;margin:8px 0 2px}.key .org,.key .co{color:#c8d5e3;margin:0}
+.key .tag{background:transparent;border-color:rgba(255,255,255,.4);color:#fff}
+.key .more{color:#fff;border-color:#fff}
+.rows{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:230px 1fr;gap:16px;padding:13px 0;border-bottom:1px solid var(--line)}
+.row b{color:var(--navy);font-weight:600}
+@media(max-width:640px){.row{grid-template-columns:1fr;gap:2px}}
+.steps{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));counter-reset:s}
+.steps div{border-top:3px solid var(--navy);padding-top:12px;font-size:14.5px;counter-increment:s}
+.steps div:before{content:counter(s,decimal-leading-zero);display:block;font:700 22px Georgia,serif;color:var(--acc)}
+.steps b{display:block;color:var(--navy)}
+.bars{display:grid;gap:12px}
+.brow{display:grid;grid-template-columns:minmax(120px,230px) 1fr 52px;gap:12px;align-items:center;font-size:14.5px}
+.brow i{display:block;height:14px;background:var(--navy);border-radius:2px}
+.brow i.l{background:#9db4cc}
+.brow em{font-style:normal;font-weight:700;color:var(--navy)}
+@media(max-width:560px){.brow{grid-template-columns:1fr 1fr 44px}}
+.mods{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.mods ul{margin:0;padding-left:18px;font-size:15px}
+.book{display:flex;gap:18px;align-items:center}
+.cover{flex:0 0 100px;height:160px;border-radius:3px;background:var(--navy);color:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:10px;font-size:12px;position:relative;overflow:hidden}
+.cover b{font:700 14px/1.2 Georgia,serif}
+.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ref{font-size:12.5px;color:var(--mute);margin-top:8px}
+.logo{display:block;width:150px;height:38px;object-fit:cover;border-radius:3px;margin:16px 0 0;background:#fff}
+.logo.s{margin:0 0 10px;border:1px solid var(--line)}
+.logo.k{margin:0 0 14px}
 </style>
 </head>
 <body>
@@ -77,10 +113,10 @@ header{background:#0a2540;color:#fff;padding:52px 0 44px;border-bottom:5px solid
 <h1>Do circular economy strategies and landfill ownership create shareholder value?</h1>
 <p class="lead">A comparative study of Waste Management, Republic Services and Waste Connections, 2017–2024, built entirely on public filings and market data.</p>
 <div class="hl"><div><b>Distinction</b><span>Awarded grade</span></div><div><b>3</b><span>industry leaders compared</span></div><div><b>8 years</b><span>of data, 2017–2024</span></div><div><b>50+</b><span>data tables</span></div></div>
-<p class="by"><b>Ananya Bangera</b> &nbsp;|&nbsp; <a href="mailto:ananyabangera9@gmail.com">ananyabangera9@gmail.com</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/ananya-bangera9">LinkedIn</a></p>
+<p class="by"><b>Ananya Bangera</b> &nbsp;|&nbsp; <a href="mailto:ananyabangera9@gmail.com">ananyabangera9@gmail.com</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/ananyabangera9">LinkedIn</a></p>
 <a class="btn" href="dissertation.pdf">Read the full dissertation (PDF)</a><a class="btn o" href="#findings">Jump to the findings</a>
 </div></header>
-<nav><div class="wrap"><b>Jump to:</b><a href="#overview">Overview</a><a href="#design">Research design</a><a href="#findings">Findings</a><a href="#takeaways">Takeaways</a><a href="#tech">Technical skills</a><a href="#soft">Soft skills</a><a href="#reflect">Reflections</a><a href="#refs">References</a></div></nav>
+<nav><div class="wrap"><b>Jump to:</b><a href="index.html">Home</a><a href="#overview">Overview</a><a href="#design">Research design</a><a href="#findings">Findings</a><a href="#takeaways">Takeaways</a><a href="#tech">Technical skills</a><a href="#soft">Soft skills</a><a href="#relevance">Finance relevance</a><a href="#reflect">Reflections</a><a href="#refs">References</a></div></nav>
 
 <section id="overview"><div class="wrap">
 <h2>The project in 60 seconds</h2>
@@ -187,6 +223,18 @@ header{background:#0a2540;color:#fff;padding:52px 0 44px;border-bottom:5px solid
 <div class="card"><h3>Communication</h3>Made technical finance content readable for a general audience.</div>
 <div class="card"><h3>Attention to detail</h3>Cross-checked company filings against Bloomberg, and later re-audited my own appendix.</div>
 </div>
+</div></section>
+
+<section id="relevance"><div class="wrap">
+<h2>Relevance to finance operations</h2>
+<p class="sub">How the dissertation work maps to day-to-day finance operations skills.</p>
+<div class="tw"><table>
+<tr><th>Finance operations skill</th><th>Evidence in this project</th></tr>
+<tr><td>Data accuracy and reconciliation</td><td>Cross-referenced 10-K figures with Bloomberg for three firms over eight years</td></tr>
+<tr><td>Financial statement analysis</td><td>Income statements, balance sheets, cash flows and segment revenue analysed in common-size form</td></tr>
+<tr><td>Error detection and control</td><td>Identified inconsistent data in my own appendix and documented the correction</td></tr>
+<tr><td>Reporting</td><td>50+ tables and charts presenting the results clearly</td></tr>
+</table></div>
 </div></section>
 
 <section id="reflect"><div class="wrap">
